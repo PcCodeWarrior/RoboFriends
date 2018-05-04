@@ -20,7 +20,6 @@ class App extends Component {
     componentDidMount() {
         axios.get('https://jsonplaceholder.typicode.com/users')
              .then(users => this.setState({robots: users.data}));
-
     }
 
     onSearchChange = (event) => {
